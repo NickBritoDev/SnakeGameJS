@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.alert{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: #181818;
+    border-radius: 12px;
+    box-shadow: 4px 4px 4px 5px #000;
+}
+
+.alert p {
+    margin: 15px ;
+    color: rgb(5, 141, 5);
+}
+
+.alert button{
+    color: rgb(5, 141, 5);
+    padding: 10px 34px;
+    margin: 30px auto 10px auto;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.alert button:hover{
+    background-color: rgb(5, 141, 5);
+    color: #FFF;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #525151;
+}
+
+.wrapper {
+    background-color: #000;
+    width: 90vmin;
+    height: 95vmin;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    border-radius: 14px;
+}
+
+.game-details {
+    color: rgb(5, 141, 5);
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 20px 27px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.play-board {
+    width: 100%;
+    background-color: #1a1919;
+    height: 100%;
+    display: grid;
+    grid-template: repeat(30, 1fr)/repeat(30, 1fr);
+}
+
+.play-board .food{
+    background-color: rgb(255, 0, 0);
+}
+
+.play-board .snake{
+    background-color: rgb(5, 141, 5);
+}
+
